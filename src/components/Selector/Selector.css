@@ -1,0 +1,38 @@
+.selector{
+    text-align: center;
+    color: white;
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 50% 30% 15%;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+}
+
+.selector div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.selector button{
+    background-color: #b33535;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px; 
+}
+
+.selector button:active{
+    background-color: rgb(207, 66, 66);
+}
+
+select{
+    color: white;
+    background-color: #b33535;
+}
+
+option{
+    text-align: center;
+}

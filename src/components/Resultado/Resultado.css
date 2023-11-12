@@ -1,0 +1,27 @@
+.resultadoSection{
+    text-align: center;
+    margin-top: 32px;
+}
+
+h2{
+    color: white;
+    font-size: 24px;
+}
+
+.resultado{
+    margin: 32px auto;
+    height: 100px;
+    width: 75%;
+    background-color: #A53636;
+    border-radius: 16px;
+    position: relative;
+}
+
+.tirada{
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
