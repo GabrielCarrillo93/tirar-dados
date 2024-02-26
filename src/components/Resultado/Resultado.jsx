@@ -1,14 +1,13 @@
 import './Resultado.css'
 
-const Resultado = ({ tirada}) => {
+const Resultado = () => {
   return (
     <section className='resultadoSection'>
         <h2>Resultados</h2>
         <div className="resultado">
-            <span className="tirada">{tirada}</span>
         </div>
     </section>
   )
 }
 
-export default Resultado
+export default Resultado 

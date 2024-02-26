@@ -2,7 +2,7 @@ footer{
     background-color: #A53636;
     position: fixed;
     bottom: 0;
-    padding: 16px;
+    padding: 8px;
     text-align: center;
     width: 100%;
 }
@@ -15,4 +15,5 @@ p{
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }

@@ -10,18 +10,15 @@ h2{
 
 .resultado{
     margin: 32px auto;
-    height: 100px;
     width: 75%;
     background-color: #A53636;
     border-radius: 16px;
-    position: relative;
+    padding: 32px;
 }
 
 .tirada{
     font-size: 48px;
     font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: start;
+    width: 25%;
 }
