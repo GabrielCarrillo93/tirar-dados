@@ -5,8 +5,8 @@ const Selector = () => {
     return (
         <div className='selector'>
             <span>Seleccione un dado:</span>
-            <select name="dado" id="dado">
-                <option value="" selected disabled>dados</option>
+            <select name="dado" id="dado" defaultValue={"dados"}>
+                <option value="dados" disabled>dados</option>
                 <option value="4">D4</option>
                 <option value="6">D6</option>
                 <option value="8">D8</option>

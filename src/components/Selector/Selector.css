@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-size: 18px
+    font-size: 18px;
+    margin: 10px 0
 }
 
 select{
