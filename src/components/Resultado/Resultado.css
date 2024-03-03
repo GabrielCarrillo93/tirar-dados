@@ -1,6 +1,5 @@
 .resultadoSection{
     text-align: center;
-    margin-top: 32px;
 }
 
 h2{
@@ -24,6 +23,7 @@ h2{
 @media screen and (width >= 768px) {
     .resultadoSection{
         width: 35%;
+        margin-top: 32px;
     }
 
     .resultado{
