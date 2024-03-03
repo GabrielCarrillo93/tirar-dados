@@ -16,7 +16,7 @@ const Resultado = ({resultado}) => {
         <section className='resultadoSection'>
             <h2>Resultados</h2>
             <div className="resultado">
-                <p className='total'>Total: <span>{sumaTotal ? sumaTotal : "--"}</span></p>
+                <p className='total'>Total: <span className='tirada'>{sumaTotal ? sumaTotal : "--"}</span></p>
                 <p className='lista'>Dados: {resultado.map((item, i) => <span key={i}>{item} </span>)}</p>
             </div>
         </section>

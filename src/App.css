@@ -19,3 +19,9 @@ main{
     flex-direction: column;
     position: relative;
 }
+
+@media screen and (width >= 768px){
+    main{
+        align-items: center;
+    }
+}

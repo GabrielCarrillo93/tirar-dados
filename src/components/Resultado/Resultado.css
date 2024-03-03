@@ -19,6 +19,22 @@ h2{
 .tirada{
     font-size: 48px;
     font-weight: 700;
-    text-align: start;
-    width: 25%;
+}
+
+@media screen and (width >= 768px) {
+    .resultadoSection{
+        width: 35%;
+    }
+
+    .resultado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resultado p {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
 }

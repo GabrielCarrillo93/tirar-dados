@@ -19,3 +19,9 @@ select{
         outline-style: none;
     }
 }
+
+@media screen and (width >= 768px) {
+    .selector{
+        width: 35%;
+    }
+}
