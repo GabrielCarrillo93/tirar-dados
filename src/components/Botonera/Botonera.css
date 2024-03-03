@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: 16px;
+    bottom: 24px;
     left: 18px;
     right: 18px;
     max-width: 90%;
@@ -15,5 +15,6 @@
         left: 50%;
         transform: translateX(-50%);
         gap: 16px;
+        bottom: 0
     }
 }
