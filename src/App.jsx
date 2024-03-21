@@ -11,6 +11,7 @@ function App() {
     const [tirada, setTirada] = useState([{id:1, value: null}])
     const [resultado, setResultado] = useState([])
     const [counter, setCounter] = useState(2)
+    const [loader, setLoader] = useState(null)
 
     
     return (
@@ -18,7 +19,9 @@ function App() {
             <Header />
             <main>
                 <Resultado 
-                    resultado={resultado}/>
+                    resultado={resultado}
+                    loader={loader}/>
+                <div className='seleccion'>
                 {tirada.map(dado => <Selector 
                                         key={dado.id} 
                                         id={dado.id} 
@@ -28,6 +31,7 @@ function App() {
                                         setTirada={setTirada}
                                         />)
                     }
+                </div>
                 <Botonera 
                     counter={counter}
                     setCounter={setCounter}
@@ -35,7 +39,8 @@ function App() {
                     setTirada={setTirada} 
                     setResultado={setResultado} 
                     dados={dados} 
-                    setDados={setDados}/>
+                    setDados={setDados}
+                    setLoader={setLoader}/>
             </main>
             <Footer />
         </>

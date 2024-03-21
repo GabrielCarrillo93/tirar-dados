@@ -20,8 +20,8 @@ select{
     }
 }
 
-@media screen and (width >= 768px) {
+@media screen and (width > 768px) {
     .selector{
-        width: 35%;
+        justify-content: space-around;
     }
 }

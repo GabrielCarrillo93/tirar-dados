@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import Boton from "../Boton/Boton"
 import './Botonera.css'
 
-const Botonera = ({counter, setCounter, tirada, setTirada, setResultado, dados, setDados}) => {
+const Botonera = ({counter, setCounter, tirada, setTirada, setResultado, dados, setDados, setLoader}) => {
     const [activo, setActivo] = useState(false)
     
     const activarBoton = () => {
@@ -25,12 +25,25 @@ const Botonera = ({counter, setCounter, tirada, setTirada, setResultado, dados, 
     }
 
     const darResultados = () => {
-        let results = []
+        setLoader(true)
+        
+        setTimeout(() =>{
+            let results = []
         for (let i = 0; i < tirada.length; i++) {
             results[i] = Math.ceil(Math.random() * tirada[i].value)
-            console.log(results[i]);
         }
         setResultado(results)
+        setLoader(null)
+        }, 1000)
+    }
+
+    const handleResetButton = () => {
+        setTirada([{id:1, value: null}]);
+        setCounter(2);
+        setDados(1);
+        setResultado([]);
+        const selector = document.getElementById("dado-1");
+        selector.value = "dados";
     }
 
     return (
@@ -40,6 +53,13 @@ const Botonera = ({counter, setCounter, tirada, setTirada, setResultado, dados, 
                 tamano={32}
                 activo={true}
                 accion={handleAgregarClick}
+                />
+            <Boton 
+                texto="Reset"
+                icon={false}
+                tamano={32}
+                activo={true}
+                accion={handleResetButton}
                 />
             <Boton 
                 texto="Tirar"

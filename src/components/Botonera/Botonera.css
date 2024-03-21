@@ -3,10 +3,14 @@
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: 28px;
+    bottom: 8px;
     left: 18px;
     right: 18px;
     max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    row-gap: 8px;
 }
 
 @media screen and (width >= 768px ) {
@@ -15,6 +19,6 @@
         left: 50%;
         transform: translateX(-50%);
         gap: 16px;
-        bottom: 0
+        bottom: 0;
     }
 }

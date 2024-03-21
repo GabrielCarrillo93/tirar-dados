@@ -1,19 +1,25 @@
-footer{
-    background-color: #A53636;
-    position: fixed;
-    bottom: 0;
-    padding: 8px;
-    text-align: center;
-    width: 100%;
+footer {
+    display: none;
 }
 
-p{
-    color: white;
-    font-size: 16px;
-}
+@media screen and (width >= 768px) {
+    footer{
+        background-color: #A53636;
+        position: fixed;
+        bottom: 0;
+        padding: 8px;
+        text-align: center;
+        width: 100%;
+    }
 
-a{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    p{
+        color: white;
+        font-size: 16px;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
 }

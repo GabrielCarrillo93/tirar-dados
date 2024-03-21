@@ -1,5 +1,6 @@
 .resultadoSection{
     text-align: center;
+    color: white;
 }
 
 h2{
@@ -10,14 +11,23 @@ h2{
 .resultado{
     margin: 32px auto;
     width: 75%;
+    height: 130px;
     background-color: #A53636;
     border-radius: 16px;
     padding: 32px;
+
+
 }
 
 .tirada{
     font-size: 48px;
     font-weight: 700;
+}
+
+.carga{
+    font-size: 96px;
+    margin: 0;
+    animation: .5s infinite girar linear;
 }
 
 @media screen and (width >= 768px) {
@@ -36,5 +46,15 @@ h2{
         display: flex;
         align-items: center;
         gap: 16px;
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
     }
 }

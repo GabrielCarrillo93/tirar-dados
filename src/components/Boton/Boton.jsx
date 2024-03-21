@@ -10,7 +10,7 @@ const Boton = ({texto, tamano, icon, activo, accion}) => {
             onClick={accion}
             disabled={activo ? false : true}
             type="button"
-            style={{fontSize: `${tamano}px`}}>{texto}{icon? <Icon icon="arcticons:rpg-simple-dice"/> : ""}</button>
+            style={{fontSize: `${tamano}px`}}>{texto}{icon? <Icon icon="arcticons:rpg-simple-dice" className='icon'/> : ""}</button>
             
     )
 }

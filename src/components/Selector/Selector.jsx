@@ -20,7 +20,7 @@ const Selector = ({setDados, dados, id, tirada, setTirada}) => {
     }
     return (
         <div className='selector'>
-            <span>Seleccione un dado:</span>
+            <label htmlFor='dado'>Seleccione un dado:</label>
             <select name="dado" id={`dado-${id}`} defaultValue={"dados"} onChange={handleSelectChange}>
                 <option value="dados" disabled>dados</option>
                 <option value="4">D4</option>
