@@ -1,11 +1,14 @@
 header{
     background-color: #A53636;
+    box-shadow: 0 4px 3px #802b2b, inset 1px 1px 5px #e06868;
     padding: 16px;
     text-align: center;
+    border-radius: 0 0 5px 5px;
 }
 
 h1{
     color: white;
     font-size: 32px;
     font-weight: 700;
+    text-shadow: 2px 2px 2px black;
 }

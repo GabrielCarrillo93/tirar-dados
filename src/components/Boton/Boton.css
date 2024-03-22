@@ -10,6 +10,7 @@ button{
     border-radius: 16px;
     font-size: 14px;
     box-shadow: 1px 5px 3px #802a2a, inset 1px 1px 3px #df5e5e;
+    text-shadow: 2px 2px 2px black;
     &:disabled{
         background-color: #764141;
         box-shadow: 1px 5px 3px #5a3232, inset 1px 1px 3px #aa6969;
@@ -20,6 +21,10 @@ button{
     &:active{
         animation: .3s presionar;
     }
+}
+
+.icon{
+    filter: drop-shadow(2px 2px black);
 }
 
 @keyframes presionar {

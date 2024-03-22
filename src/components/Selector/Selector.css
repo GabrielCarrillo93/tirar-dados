@@ -8,6 +8,10 @@
     margin: 10px 0
 }
 
+label{
+    text-shadow: 2px 2px 2px #A53636;
+}
+
 select{
     font-size: 16px;
     text-align: center;
