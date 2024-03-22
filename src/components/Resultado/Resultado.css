@@ -15,8 +15,8 @@ h2{
     background-color: #A53636;
     border-radius: 16px;
     padding: 32px;
-
-
+    box-shadow: 1px 5px 3px #802a2a, inset 1px 1px 3px #df5e5e;;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .tirada{
@@ -28,6 +28,7 @@ h2{
     font-size: 96px;
     margin: 0;
     animation: .5s infinite girar linear;
+    filter: drop-shadow(1px 2px #0000006b);
 }
 
 @media screen and (width >= 768px) {

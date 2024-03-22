@@ -4,7 +4,7 @@ import './Boton.css'
 // eslint-disable-next-line react/prop-types
 const Boton = ({texto, tamano, icon, activo, accion}) => {
 
-
+    
     return (
         <button
             onClick={accion}
